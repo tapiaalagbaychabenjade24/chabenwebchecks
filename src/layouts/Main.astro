@@ -1,0 +1,45 @@
+---
+import '@fontsource-variable/bricolage-grotesque';
+
+// Components
+import Header from '../components/Header.astro';
+import ChecklistPurpose from '../components/ChecklistPurpose.astro';
+---
+
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
+
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+
+		<title>Chaben Web Checks</title>
+	</head>
+
+	<body>
+		<Header />
+
+		<ChecklistPurpose />
+
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	html {
+		background-color: #1b1e2b;
+	}
+
+	body {
+		font-family: 'Bricolage Grotesque Variable', sans-serif;
+
+		@apply text-white w-11/12 max-w-2xl my-8 mx-auto;
+	}
+
+	.code {
+		background-color: #292d3e;
+
+		@apply rounded-lg p-4 mt-4;
+	}
+</style>

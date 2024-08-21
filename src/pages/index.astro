@@ -1,16 +1,538 @@
 ---
-
+import Main from '../layouts/Main.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Main>
+	<section class='flex flex-col gap-8'>
+		<div>
+			<h2 class='mb-2'>1. Website Title</h2>
+
+			<p class='text-periwinkle'>
+				The title tag is the most important on page SEO element and usually
+				target keywords present in this content type helps return relevant
+				pages on search engines.
+			</p>
+
+			<div class='code'>
+				<span class='text-blue'>{'<'}</span><span class='text-pink'
+					>title</span
+				><span class='text-blue'>{'>'}</span>Your Website Title Here<span
+					class='text-blue'>{'</'}</span
+				><span class='text-pink'>title</span><span class='text-blue'
+					>{'>'}</span
+				>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>2. Meta Description</h2>
+
+			<p class='text-periwinkle'>
+				Write a meta description to provide a brief summary of your page.
+				This will appear under the title in search engine results, helping
+				to attract clicks.
+			</p>
+
+			<div class='code'>
+				<span class='text-blue'>{'<'}</span><span class='text-pink'
+					>meta</span
+				>
+				<span class='text-lavender'>name</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>description</span><span class='text-blue'
+					>"</span
+				>
+				<span class='text-lavender'>content</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'
+					>A brief description of your webpage.</span
+				><span class='text-blue'>{'" />'}</span>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>
+				3. Meta Tags for Social Media (Open Graph and Twitter Cards)
+			</h2>
+
+			<p class='text-periwinkle'>
+				These tags help control how your website appears when shared on
+				social media platforms like Facebook and Twitter. This makes your
+				website look more appealing when people share it.
+			</p>
+
+			<ul class='list-disc list-inside mt-4'>
+				<li class='text-periwinkle'>
+					Open Graph Tags (for Facebook, LinkedIn, etc.)
+				</li>
+			</ul>
+
+			<div class='code'>
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>og:title</span><span class='text-blue'
+						>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>Your Website Title Here</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>og:description</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'
+						>A brief description of your webpage.</span
+					><span class='text-blue'>{'" />'}</span>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>og:image</span><span class='text-blue'
+						>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>URL to your image</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>og:url</span><span class='text-blue'
+						>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>Your Website URL Here</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+			</div>
+
+			<ul class='list-disc list-inside mt-4'>
+				<li class='text-periwinkle'>Twitter Card Tags (for Twitter)</li>
+			</ul>
+
+			<div class='code'>
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>twitter:card</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>summary_large_image</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>twitter:title</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>Your Website Title Here</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>twitter:description</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'
+						>A brief description of your webpage.</span
+					><span class='text-blue'>{'" />'}</span>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>twitter:image</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>URL to your image</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>twitter:url</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>Your Website URL Here</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>twitter:creator</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>@yourusername</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>meta</span
+					>
+					<span class='text-lavender'>property</span><span
+						class='text-blue'>{'="'}</span
+					><span class='text-yellow'>twitter:site</span><span
+						class='text-blue'>"</span
+					>
+					<span class='text-lavender'>content</span><span class='text-blue'
+						>{'="'}</span
+					><span class='text-yellow'>@yourwebsite</span><span
+						class='text-blue'>{'" />'}</span
+					>
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>4. Setting up Favicon</h2>
+
+			<p class='text-periwinkle'>
+				Add a favicon to make your website recognizable in the browser tab.
+			</p>
+
+			<div class='code'>
+				<span class='text-blue'>{'<'}</span><span class='text-pink'
+					>link</span
+				>
+				<span class='text-lavender'>rel</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>icon</span><span class='text-blue'
+					>"</span
+				>
+				<span class='text-lavender'>href</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>path-to-your-favicon.ico</span><span
+					class='text-blue'>"</span
+				>
+				<span class='text-lavender'>type</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>image/x-icon</span><span
+					class='text-blue'>{'" />'}</span
+				>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>5. Header Tags (H1, H2, H3, H4, H5, H6)</h2>
+
+			<p class='text-periwinkle'>
+				Use header tags to structure your content. H1 is for the main title,
+				H2 for subheadings, and H3 to H6 for further divisions. Each should
+				include relevant keywords.
+			</p>
+
+			<div class='code'>
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>h1</span
+					><span class='text-blue'>{'>'}</span><span
+						>Main Title with Keyword</span
+					><span class='text-blue'>{'</'}</span><span class='text-pink'
+						>h1</span
+					><span class='text-blue'>{'>'}</span>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>h2</span
+					><span class='text-blue'>{'>'}</span><span
+						>Subheading with Keyword</span
+					><span class='text-blue'>{'</'}</span><span class='text-pink'
+						>h2</span
+					><span class='text-blue'>{'>'}</span>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>h3</span
+					><span class='text-blue'>{'>'}</span><span
+						>Further Heading with Keyword</span
+					><span class='text-blue'>{'</'}</span><span class='text-pink'
+						>h3</span
+					><span class='text-blue'>{'>'}</span>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>h4</span
+					><span class='text-blue'>{'>'}</span><span
+						>Subsection with Keyword</span
+					><span class='text-blue'>{'</'}</span><span class='text-pink'
+						>h4</span
+					><span class='text-blue'>{'>'}</span>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>h5</span
+					><span class='text-blue'>{'>'}</span><span
+						>Smaller Subsection with Keyword</span
+					><span class='text-blue'>{'</'}</span><span class='text-pink'
+						>h5</span
+					><span class='text-blue'>{'>'}</span>
+				</p>
+
+				<p>
+					<span class='text-blue'>{'<'}</span><span class='text-pink'
+						>h6</span
+					><span class='text-blue'>{'>'}</span><span
+						>Smallest Subsection with Keyword</span
+					><span class='text-blue'>{'</'}</span><span class='text-pink'
+						>h6</span
+					><span class='text-blue'>{'>'}</span>
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>6. Adding Alt Text to Images</h2>
+
+			<p class='text-periwinkle'>
+				Add descriptive alt text to all images to improve accessibility and
+				SEO.
+			</p>
+
+			<div class='code'>
+				<span class='text-blue'>{'<'}</span><span class='text-pink'
+					>img</span
+				>
+				<span class='text-lavender'>src</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>image-url.png</span><span
+					class='text-blue'>"</span
+				>
+				<span class='text-lavender'>src</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>Descriptive text with keyword</span><span
+					class='text-blue'>{'" />'}</span
+				>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>7. Image Optimization (Compression)</h2>
+
+			<p class='text-periwinkle'>
+				Images enhance your website’s appearance, but large files can slow
+				it down; compressing them with TinyPNG reduces file size without
+				quality loss, speeding up your site and improving SEO. For example,
+				compress a 5MB image to 500KB while maintaining its visual quality.
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>8. Lazy Loading for Images</h2>
+
+			<p class='text-periwinkle'>
+				Implement lazy loading to ensure images load only when they come
+				into view, improving your site’s performance.
+			</p>
+
+			<div class='code'>
+				<span class='text-blue'>{'<'}</span><span class='text-pink'
+					>img</span
+				>
+				<span class='text-lavender'>src</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>image-url.png</span><span
+					class='text-blue'>"</span
+				>
+				<span class='text-lavender'>src</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>Descriptive text with keyword</span><span
+					class='text-blue'>"</span
+				>
+				<span class='text-lavender'>loading</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>lazy</span><span class='text-blue'
+					>{'" />'}</span
+				>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>9. Proper Use of href and rel Attributes in Links</h2>
+
+			<p class='text-periwinkle'>
+				Ensure all links use appropriate rel attributes (e.g., nofollow,
+				noopener noreferrer) to manage how search engines treat them and to
+				enhance security.
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>10. Creating and Uploading a Sitemap</h2>
+
+			<p class='text-periwinkle'>
+				Generate a sitemap to provide search engines with a roadmap of your
+				website’s structure, and then submit it to Google Search Console to
+				help Google crawl and index your site more efficiently.
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>11. Robots.txt</h2>
+
+			<p class='text-periwinkle'>
+				Use a robots.txt file to control how search engine bots crawl and
+				index your website.
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>12. Setting Up Google Analytics</h2>
+
+			<p class='text-periwinkle'>
+				Install Google Analytics to track visitor behavior, gather valuable
+				data on site usage, and gain insights into how users interact with
+				your website.
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>13. Ensuring Mobile Friendliness</h2>
+
+			<p class='text-periwinkle'>
+				Make sure your website looks good and works well on mobile devices.
+				This is important because many people use their phones to browse the
+				web.
+			</p>
+
+			<ul class='list-disc list-inside mt-4'>
+				<li class='text-periwinkle'>Responsive Media Queries</li>
+			</ul>
+
+			<div class='code'>
+				<span class='text-blue'>@media (</span><span>max-width:</span>
+				<span class='text-yellow'>365px</span><span class='text-blue'
+					>) {'{}'}</span
+				>
+			</div>
+
+			<ul class='list-disc list-inside mt-4'>
+				<li class='text-periwinkle'>Viewport Meta Tag</li>
+			</ul>
+
+			<div class='code'>
+				<span class='text-blue'>{'<'}</span><span class='text-pink'
+					>meta</span
+				>
+				<span class='text-lavender'>name</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'>viewport</span><span class='text-blue'
+					>"</span
+				>
+				<span class='text-lavender'>content</span><span class='text-blue'
+					>{'="'}</span
+				><span class='text-yellow'
+					>width=device-width, initial-scale=1.0</span
+				><span class='text-blue'>{'" />'}</span>
+			</div>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>14. Setting Up SSL (HTTPS)</h2>
+
+			<p class='text-periwinkle'>
+				Set up an SSL certificate to secure your site and ensure it uses
+				HTTPS, which is crucial for security and SEO.
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>15. Checking Website Speed (Performance)</h2>
+
+			<p class='text-periwinkle'>
+				Test your site’s speed using tools like Google PageSpeed Insights
+				and optimize it based on their recommendations.
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>16. Testing Cross-Browser Compatibility</h2>
+
+			<p class='text-periwinkle'>
+				Ensure your site functions correctly across all major web browsers
+				(Chrome, Firefox, Safari, Edge).
+			</p>
+		</div>
+
+		<div>
+			<h2 class='mb-2'>17. Setting Up 404 Error Page</h2>
+
+			<p class='text-periwinkle'>
+				Create a custom 404 error page to handle visitors who land on
+				non-existent pages and keep them engaged with helpful links.
+			</p>
+		</div>
+	</section>
+</Main>
